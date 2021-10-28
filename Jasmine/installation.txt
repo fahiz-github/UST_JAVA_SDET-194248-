@@ -1,1 +1,17 @@
+Jasmine is an open-source and most popular JavaScript library testing framework to test any kind of JavaScript application. Jasmine follows Behavior Driven Development (BDD) procedure to ensure that each line of JavaScript statement is properly unit tested.
 
+Installation:
+Need node js
+npm install -g jasmine-node
+jasmine init
+
+
+The above commands will create a package.json and spec folder where we need to write our spec files.
+
+In the all the examples below, 
+Create a folder under specs called Examples.
+
+And keep the corresponding spec files under spec directly.
+
+To run:jasmine filename
+eg: jasmine ex1.js
