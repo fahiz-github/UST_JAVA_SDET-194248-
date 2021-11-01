@@ -1,0 +1,154 @@
+<html><head><meta charset="utf-8"><style>body { font-family: Arial; }ul { list-style-position: inside; }li img { max-width: 100%; }span.passed { padding: 0 1em; color: green; }span.failed { padding: 0 1em; color: red; }span.pending { padding: 0 1em; color: orange; }span.stacktrace { white-space: pre; border: 1px solid rgb(0, 0, 0); font-size: 9pt; padding: 4px; background-color: rgb(204, 204, 204); }</style><script type="text/javascript">function showhide(id) {var e = document.getElementById(id);e.style.display = (e.style.display === "block") ? "none" : "block";}function buildQuickLinks() {var failedSpecs = document.querySelectorAll("li.failed");var quickLinksContainer = document.getElementById("quickLinks");if (!quickLinksContainer) return;if (failedSpecs.length > 0) { document.getElementById("quickLinksHeader").textContent = "Quicklink of Failure"}for (var i = 0; i < failedSpecs.length; ++i) {var li = document.createElement("li");var a = document.createElement("a");a.href = "#" + failedSpecs[i].id;a.textContent = failedSpecs[i].dataset.name + "  (" + failedSpecs[i].dataset.browser + ")";li.appendChild(a);quickLinksContainer.appendChild(li);}}function updatePassCount() {var totalPassed = document.querySelectorAll("li.passed").length;var totalFailed = document.querySelectorAll("li.failed").length;var totalSpecs = totalFailed + totalPassed;console.log("passed: %s, failed: %s, total: %s", totalPassed, totalFailed, totalSpecs);document.getElementById("summaryTotalSpecs").textContent = document.getElementById("summaryTotalSpecs").textContent + totalSpecs;document.getElementById("summaryTotalFailed").textContent = document.getElementById("summaryTotalFailed").textContent + totalFailed;if (totalFailed) {document.getElementById("summary").className = "failed";}}function start() {updatePassCount();buildQuickLinks();}window.onload = start;</script></head><body><h1>Report</h1><div id="summary" class="passed"><h4>Summary</h4><ul><li id="summaryTotalSpecs">Total specs tested: </li><li id="summaryTotalFailed">Total failed: </li></ul></div><ul style="list-style-type:none"><h4>Should navigate to Demo Page (29 s)</h4><li id="9c5d2e80-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec0" data-name="Url verification" data-browser="chrome"><span class="passed">&#10003;</span><a href="e80b980ddf269c39bb0c834f170e523f.png">Url verification</a>(2 s)</li><li id="9c5d5590-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec1" data-name="Checking heading" data-browser="chrome"><span class="passed">&#10003;</span><a href="128ebbb725b7e4bbf2d147b7019ba3ab.png">Checking heading</a>(0.408 s)</li><li id="9c5d5591-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec2" data-name="Checking FirstName" data-browser="chrome"><span class="passed">&#10003;</span><a href="770295939a95eff1d1d37907995ffe4a.png">Checking FirstName</a>(0.149 s)</li><li id="9c5d5592-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec3" data-name="ChangingFirstname" data-browser="chrome"><span class="passed">&#10003;</span><a href="ed33a724e08829c8511c6f218651af09.png">ChangingFirstname</a>(4 s)</li><li id="9c5d5593-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec4" data-name="Checking Lastnname" data-browser="chrome"><span class="passed">&#10003;</span><a href="d3b09730a5043eb226762745146f9037.png">Checking Lastnname</a>(0.222 s)</li><li id="9c5d5594-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec5" data-name="Checking Fullname" data-browser="chrome"><span class="passed">&#10003;</span><a href="0d9db9b3799b81e7c1e128d5ee2173b8.png">Checking Fullname</a>(0.154 s)</li><li id="9c5d5595-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec6" data-name="Checking 1st row" data-browser="chrome"><span class="passed">&#10003;</span><a href="ffec3fc6f6125c54bc6edf988bd95b24.png">Checking 1st row</a>(0.175 s)</li><li id="9c5d7ca0-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec7" data-name="Checking 2nd row" data-browser="chrome"><span class="passed">&#10003;</span><a href="07e8a304bdf005153f823302e4a0b37b.png">Checking 2nd row</a>(0.164 s)</li><li id="9c5d7ca1-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec8" data-name="Checking 3rd row" data-browser="chrome"><span class="passed">&#10003;</span><a href="2279640c94221b3b1e9b35e70a0354a3.png">Checking 3rd row</a>(0.152 s)</li><li id="9c5d7ca2-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec9" data-name="Checking 4rth row" data-browser="chrome"><span class="passed">&#10003;</span><a href="7f7337e77121e678b28c4de0645464e6.png">Checking 4rth row</a>(0.183 s)</li><li id="9c5d7ca3-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec10" data-name="Checking 5th row" data-browser="chrome"><span class="passed">&#10003;</span><a href="ff715366f65fd2b5334da45506d04470.png">Checking 5th row</a>(0.223 s)</li><li id="9c5d7ca4-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec11" data-name="1st option value check in rdbtn" data-browser="chrome"><span class="passed">&#10003;</span><a href="ab77899accfb5cae7ed78f99d66c02b6.png">1st option value check in rdbtn</a>(4 s)</li><li id="9c5d7ca5-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec12" data-name="2nd option value check  in rdbtn" data-browser="chrome"><span class="passed">&#10003;</span><a href="b24f4e691166d7b3102b4917660f298a.png">2nd option value check  in rdbtn</a>(2 s)</li><li id="9c5d7ca6-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec13" data-name="3rd option value check  in rdbtn" data-browser="chrome"><span class="passed">&#10003;</span><a href="3fe1da142245691e4dd6ec5a29b15b6b.png">3rd option value check  in rdbtn</a>(2 s)</li><li id="9c5d7ca7-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec14" data-name="4rth option value check  in rdbtn" data-browser="chrome"><span class="passed">&#10003;</span><a href="353409c75ec0b951294c2c9566f8c6a5.png">4rth option value check  in rdbtn</a>(2 s)</li><li id="9c5d7ca8-3aca-11ec-a116-7dd13be455c4" class="failed" data-spec="spec15" data-name="1st option value check in chkbox" data-browser="chrome"><span class="failed">&#10007;</span><a href="825e32601240c453fe2a4a69c9fe22d4.png">1st option value check in chkbox</a>(2 s)<ul><li>Failed: element click intercepted: Element is not clickable at point (473, 649)
+  (Session info: chrome=95.0.4638.54)
+  (Driver info: chromedriver=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}),platform=Windows NT 10.0.19043 x86_64) [<a href="javascript:showhide('spec15-Windows-chrome-95.0.4638.540')">stack</a>]<br/><span style="display: none" id="spec15-Windows-chrome-95.0.4638.540" class="stacktrace">WebDriverError: element click intercepted: Element is not clickable at point (473, 649)
+  (Session info: chrome=95.0.4638.54)
+  (Driver info: chromedriver=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}),platform=Windows NT 10.0.19043 x86_64)
+    at Object.checkLegacyResponse (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+From: Task: WebElement.click()
+    at Driver.schedule (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at WebElement.schedule_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:2010:25)
+    at WebElement.click (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:2092:17)
+    at actionFn (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\element.js:89:44)
+    at Array.map (&lt;anonymous&gt;)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\element.js:461:65
+    at ManagedPromise.invokeCallback_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as click] (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as click] (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at UserContext.&lt;anonymous&gt; (C:\Users\Faiz\Desktop\protractor\Specs\spec.js:123:14)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+From: Task: Run it(&quot;1st option value check in chkbox&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+    at QueueRunner.complete [as onComplete] (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:533:9)
+    at Immediate.&lt;anonymous&gt; (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4231:12)
+    at processImmediate (internal/timers.js:464:21)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (C:\Users\Faiz\Desktop\protractor\Specs\spec.js:119:2)
+    at addSpecsToSuite (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (C:\Users\Faiz\Desktop\protractor\Specs\spec.js:1:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (C:\Users\Faiz\node_modules\coffeescript\lib\coffee-script\register.js:45:36)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:93:5
+    at Array.forEach (&lt;anonymous&gt;)
+    at Jasmine.loadSpecs (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:92:18)
+    at Jasmine.execute (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:197:8)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\frameworks\jasmine.js:132:15
+    at Function.promise (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:682:9)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\frameworks\jasmine.js:104:14
+    at _fulfilled (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:834:54)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:863:30
+    at Promise.promise.promiseDispatch (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:796:13)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:125:13)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)</span></li></ul></li><li id="9c5dcac0-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec16" data-name="2nd option value check in chkbox" data-browser="chrome"><span class="passed">&#10003;</span><a href="f4aff6da0e7f3b56dd2dc62e509a622c.png">2nd option value check in chkbox</a>(1 s)</li><li id="9c5dcac1-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec17" data-name="3rd option value check in chkbox" data-browser="chrome"><span class="passed">&#10003;</span><a href="3003b6516c222679c768cc83d52656c3.png">3rd option value check in chkbox</a>(1 s)</li><li id="9c5dcac2-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec18" data-name="4rth option value check in chkbox" data-browser="chrome"><span class="passed">&#10003;</span><a href="fc472a30c2f3ca11e5d19590476bb147.png">4rth option value check in chkbox</a>(1 s)</li><li id="9c5dcac3-3aca-11ec-a116-7dd13be455c4" class="failed" data-spec="spec19" data-name="1st option  dropdown" data-browser="chrome"><span class="failed">&#10007;</span><a href="c819a6e3d828ffa98467ccb7ced00201.png">1st option  dropdown</a>(1 s)<ul><li>Failed: element click intercepted: Element is not clickable at point (497, 660)
+  (Session info: chrome=95.0.4638.54)
+  (Driver info: chromedriver=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}),platform=Windows NT 10.0.19043 x86_64) [<a href="javascript:showhide('spec19-Windows-chrome-95.0.4638.540')">stack</a>]<br/><span style="display: none" id="spec19-Windows-chrome-95.0.4638.540" class="stacktrace">WebDriverError: element click intercepted: Element is not clickable at point (497, 660)
+  (Session info: chrome=95.0.4638.54)
+  (Driver info: chromedriver=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}),platform=Windows NT 10.0.19043 x86_64)
+    at Object.checkLegacyResponse (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+From: Task: WebElement.click()
+    at Driver.schedule (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at WebElement.schedule_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:2010:25)
+    at WebElement.click (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:2092:17)
+    at actionFn (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\element.js:89:44)
+    at Array.map (&lt;anonymous&gt;)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\element.js:461:65
+    at ManagedPromise.invokeCallback_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as click] (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at UserContext.&lt;anonymous&gt; (C:\Users\Faiz\Desktop\protractor\Specs\spec.js:156:7)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+From: Task: Run it(&quot;1st option  dropdown&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+    at QueueRunner.complete [as onComplete] (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:533:9)
+    at Immediate.&lt;anonymous&gt; (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4231:12)
+    at processImmediate (internal/timers.js:464:21)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (C:\Users\Faiz\Desktop\protractor\Specs\spec.js:154:2)
+    at addSpecsToSuite (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (C:\Users\Faiz\Desktop\protractor\Specs\spec.js:1:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (C:\Users\Faiz\node_modules\coffeescript\lib\coffee-script\register.js:45:36)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:93:5
+    at Array.forEach (&lt;anonymous&gt;)
+    at Jasmine.loadSpecs (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:92:18)
+    at Jasmine.execute (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:197:8)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\frameworks\jasmine.js:132:15
+    at Function.promise (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:682:9)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\built\frameworks\jasmine.js:104:14
+    at _fulfilled (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:834:54)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:863:30
+    at Promise.promise.promiseDispatch (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:796:13)
+    at C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Faiz\AppData\Roaming\npm\node_modules\protractor\node_modules\q\q.js:125:13)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)</span></li></ul></li><li id="9c5dcac4-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec20" data-name="2nd option  dropdown" data-browser="chrome"><span class="passed">&#10003;</span><a href="06221f8cd583642ec9fcb218ad5006a4.png">2nd option  dropdown</a>(1 s)</li><li id="9c5dcac5-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec21" data-name="3rd option  dropdown" data-browser="chrome"><span class="passed">&#10003;</span><a href="98ed05e3eea3735c94e468e793072236.png">3rd option  dropdown</a>(1 s)</li><li id="9c5dcac6-3aca-11ec-a116-7dd13be455c4" class="passed" data-spec="spec22" data-name="4rth option  dropdown" data-browser="chrome"><span class="passed">&#10003;</span><a href="3ab714ad8346d9c0e444f0a313dbdc9e.png">4rth option  dropdown</a>(1 s)</li></ul><a href="javascript:showhide('9c5df1d0-3aca-11ec-a116-7dd13be455c4')">Toggle Configuration</a><div class="config" id="9c5df1d0-3aca-11ec-a116-7dd13be455c4" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  95.0.4638.54</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div></body></html>
