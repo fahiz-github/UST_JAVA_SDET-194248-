@@ -4,16 +4,20 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class NewTest2 {
-	   WebDriver driver = new FirefoxDriver();
+public class NewTestSample2 {
+
+	  // WebDriver driver = new ChromeDriver();
+	   
 	   
 	   @BeforeTest
 	   public void launchapp() {
+		   System.setProperty("webdriver.chrome.driver","E:\\\\chromedriver_win32\\\\chromedriver.exe");					
+		   WebDriver driver= new ChromeDriver();
 	      // Puts an Implicit wait, Will wait for 10 seconds before throwing exception
 	      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	      
@@ -24,7 +28,8 @@ public class NewTest2 {
 	   
 	   @Test
 	   public void calculatepercent() {
-	      // Click on Math Calculators
+		   WebDriver driver= new ChromeDriver();
+		// Click on Math Calculators
 	      driver.findElement(By.xpath(".//*[@id='menu']/div[3]/a")).click();
 	      
 	      // Click on Percent Calculators
@@ -55,7 +60,8 @@ public class NewTest2 {
 	   
 	   @AfterTest
 	   public void terminatetest() {
+		   WebDriver driver= new ChromeDriver();
 	      driver.close();
 
-  }
+}
 }
